@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nilaya Architect | Minimal Luxury Architecture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1193d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-auto-rows: 300px;
+            gap: 1.5rem;
+        }
+        .masonry-item-large {
+            grid-row: span 2;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between p-6 lg:px-12 bg-transparent backdrop-blur-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<span class="text-xl font-black tracking-tighter uppercase">Nilaya</span>
+</div>
+<div class="hidden md:flex gap-8 text-sm font-medium tracking-widest uppercase">
+<a class="hover:text-primary transition-colors" href="#">Projects</a>
+<a class="hover:text-primary transition-colors" href="#">Philosophy</a>
+<a class="hover:text-primary transition-colors" href="#">Process</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="material-symbols-outlined text-2xl">menu</button>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Modern minimalist concrete villa with clean lines at sunset" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHJfw3uthg5ee9WMxA5ymvJSCHBKQ6zgRP4LePXZYVEDLITDwSgXHO3mJjpGDc1hHjX_A-V3N_M7EUwCaB5_C1VGkrXDRKijm_6nXEJ5VLGKZXE4HFx-oKHsePIkYMkkV2tlcgFkKBfGl97jcNpOoS2TKCy0ZAZ57SSHTXLqjsCEZg4FcgkxqsFu2NepttZXLD8Or3SeYDKD7ile461If6f_jEOv0-M58fK49PPGi14tqKY_D0J9IowZjgIf3ATMvpIlcknLzoJV42');"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-5xl">
+<h1 class="text-white text-5xl md:text-8xl font-black leading-none tracking-tighter mb-6">
+                Architecture that shapes the way you live.
+            </h1>
+<p class="text-white/80 text-lg md:text-xl font-light max-w-2xl mx-auto mb-10">
+                Nilaya Architect designs spaces where aesthetics, function, and emotion meet. Experience ultra-minimal luxury.
+            </p>
+<button class="bg-primary text-white px-10 py-4 rounded-none font-bold uppercase tracking-widest hover:bg-primary/90 transition-all transform hover:-translate-y-1">
+                View Projects
+            </button>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-3xl">expand_more</span>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 px-6 lg:px-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Our Essence</span>
+<h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">Studio Philosophy</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+                    We believe in ultra-minimal luxury where every line serves a purpose. Our designs are a dialogue between nature and structure, crafting environments that resonate with the human spirit.
+                </p>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    Inspired by the raw honesty of concrete and the warmth of natural light, Nilaya creates timeless monuments of living that transcend mere shelter.
+                </p>
+</div>
+<div class="order-1 lg:order-2">
+<div class="aspect-[4/5] bg-cover bg-center rounded-none shadow-2xl" data-alt="Close up architectural detail of geometric concrete stairs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdOCoocTGENWPc3G-wHPAE58KlrqFEjuZxEIxh4soJr_-AJzrVe-QC6gyNE5IUDltbwkHUvcThc0QZAe6vvvNej9-Tsn44JcdxpIOSsepd_FtSvTg0mWdeC0UaWWegS6AxVxEfDVMrA-VHrWG4ien2h5YcuPFuTt0Py5nxt2wEb0YRgxUp4nVOJDhECapIjtVjYYwxjVVpVHpy4hloaSg5670dFlb1l6sN7Pq_YnLkY3tNehD40V762YXxkJg9Gs4G3NuUotz1OmlP');"></div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Grid -->
+<section class="py-24 bg-background-light dark:bg-background-dark/50">
+<div class="px-6 lg:px-12 mb-12 flex justify-between items-end">
+<div>
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-2 block">Curation</span>
+<h2 class="text-4xl font-bold">Featured Projects</h2>
+</div>
+<a class="text-sm font-bold border-b-2 border-primary pb-1" href="#">All Work</a>
+</div>
+<div class="px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Project 1 -->
+<div class="group relative overflow-hidden aspect-video lg:aspect-square">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Minimal Courtyard House featuring central tree and glass walls" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBA8ozcOtfkWOdYxtLwvgnRqo0Xd57v_h2sMDpQ6CVZiAfdiE4Qbhn0_haW4SbplYc91NtKwndKsttsQNxPDnqEw3WLR70CwyQPzYdBKQnW0msYmq9qKj22MaJR4qTEMi-id38NmYW1-Q4NkRGr5ZFjfXE-McII2O53WsQxLzc3nJvgLyO65MFwfJc0HDSpIFZVp-T2UDo4ct4UOR_rVlqz1yuJ5n2sAeKUU6lWEZzHMpmJYfp2yr1FkqGbu8fzRXu8kcNr9vzsnamc');"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<p class="text-white/70 text-xs uppercase tracking-widest mb-2">Residential</p>
+<h3 class="text-white text-2xl font-bold">Minimal Courtyard House</h3>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden aspect-video lg:aspect-square">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern Concrete Villa overlooking the ocean" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiuIelnsGLrsEsQzReBLDURnoWxVJXo3MxI3usmPOS8rqMBcuv7KD6Yrj2WFjCaaqXCrbo0tvyJTrXzu27_qKFw0HlHEHGF2V-Jk7rwHiAp8R25mOdqlc8y5x46EHsoPPdhQNdH_wkjq531WyxR_r1sW8spF6MuJ4oI6za0-xyn9jHUyKFvDKeftYiAZbBHRzXawXxbC7ZmSmfPrlfOaA3_M-HrBAqtOOTENyOqkZQV5LcGXXJ1sNGbIg1pJfPoHsNDIo-Nq0rcHtw');"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<p class="text-white/70 text-xs uppercase tracking-widest mb-2">Luxury Villa</p>
+<h3 class="text-white text-2xl font-bold">Modern Concrete Villa</h3>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative overflow-hidden aspect-video lg:aspect-square">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Urban Glass Residence with city skyline view" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBE7F-GnMsyF0GxaRD8tFR8vDFawmuRay4J_f89KY4Y1UX_NyvR1EZE8svWnHltEloyt3xkSHxqP9d3bjIabKvMXCfoRFcTTg0O_fqJMRFHkZhp0EJ5l3jmaMbZvrOLpWiKP-8d_oRrFZ5Z7uzyFZ-JWCzphcPwASZ9S6shp10JY1ltPdKqUwIJeJhhg8QZfRaYBI1m6NOIeXdmQSHhSJuGFn8cs3bE-rgSIQFZr_mfWOf2_MAmKD4_iM2Qq6NiTPoP9xuZveHeoPgR');"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<p class="text-white/70 text-xs uppercase tracking-widest mb-2">Urban Living</p>
+<h3 class="text-white text-2xl font-bold">Urban Glass Residence</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Design Philosophy Quote -->
+<section class="relative py-40 flex items-center justify-center bg-slate-200 dark:bg-slate-900 overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')]"></div>
+<div class="relative z-10 px-6 max-w-5xl text-center">
+<h2 class="text-4xl md:text-7xl font-black italic leading-tight text-slate-800 dark:text-slate-200">
+                "Architecture is not just buildings. It is how people experience space."
+            </h2>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-2 block">Expertise</span>
+<h2 class="text-4xl font-bold">Our Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="border-t border-slate-300 dark:border-slate-700 pt-8">
+<h3 class="text-2xl font-bold mb-4">Residential Architecture</h3>
+<p class="text-slate-500 mb-6">Creating bespoke living environments that reflect personal identity and modern functional needs.</p>
+<span class="material-symbols-outlined text-primary">home_work</span>
+</div>
+<div class="border-t border-slate-300 dark:border-slate-700 pt-8">
+<h3 class="text-2xl font-bold mb-4">Luxury Villas</h3>
+<p class="text-slate-500 mb-6">High-end vacation and primary homes designed with expansive scales and exclusive materials.</p>
+<span class="material-symbols-outlined text-primary">pool</span>
+</div>
+<div class="border-t border-slate-300 dark:border-slate-700 pt-8">
+<h3 class="text-2xl font-bold mb-4">Interior Architecture</h3>
+<p class="text-slate-500 mb-6">Cohesive spatial design that integrates structural elements with interior finishes and custom furniture.</p>
+<span class="material-symbols-outlined text-primary">chair</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-white dark:bg-black/20 overflow-hidden">
+<div class="px-6 lg:px-12 mb-12">
+<h2 class="text-4xl font-bold">The Nilaya Process</h2>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory px-6 lg:px-12 gap-8 pb-10">
+<!-- Step 1 -->
+<div class="min-w-[300px] md:min-w-[450px] snap-start border-l-4 border-primary pl-8 py-4">
+<span class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4 block">01</span>
+<h3 class="text-2xl font-bold mb-4">Discovery</h3>
+<p class="text-slate-500">Understanding your vision, the site's unique characteristics, and defining the project scope and constraints.</p>
+</div>
+<!-- Step 2 -->
+<div class="min-w-[300px] md:min-w-[450px] snap-start border-l-4 border-primary pl-8 py-4">
+<span class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4 block">02</span>
+<h3 class="text-2xl font-bold mb-4">Concept</h3>
+<p class="text-slate-500">Exploration of spatial volumes, materiality, and light through sketches, 3D models, and mood boards.</p>
+</div>
+<!-- Step 3 -->
+<div class="min-w-[300px] md:min-w-[450px] snap-start border-l-4 border-primary pl-8 py-4">
+<span class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4 block">03</span>
+<h3 class="text-2xl font-bold mb-4">Development</h3>
+<p class="text-slate-500">Refining technical drawings, material selection, and structural engineering to bring the concept to life.</p>
+</div>
+<!-- Step 4 -->
+<div class="min-w-[300px] md:min-w-[450px] snap-start border-l-4 border-primary pl-8 py-4">
+<span class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4 block">04</span>
+<h3 class="text-2xl font-bold mb-4">Construction</h3>
+<p class="text-slate-500">Meticulous oversight of the building process to ensure the architectural vision is realized flawlessly.</p>
+</div>
+</div>
+</section>
+<!-- Visual Gallery -->
+<section class="w-full flex flex-col md:flex-row h-[600px] bg-black">
+<div class="w-full md:w-1/3 h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" data-alt="Interior shot of a minimal living room with floor to ceiling glass" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMbUbZAhuaxk21dDBOGjCWHI5VhRd9aAp2Kxpxpes2n5RTKPabXh9LaPNc7rpSf2vyHP-U1MX-d0c1GU1P_j9ZOSEK8xMJpwrusoqSpYHik1Kn0vPlnQel-1gK_P62ZprsJ0afCHRIjevtWHNYKXAhix0bqB_lIFazwh1H7L6qqCNfPpd5EmipN7tjv07aPmTfF1J3sFk-8x6LP5jmeXvm3eZ1BOA03bugoxMYBHD-oTpKaX-ake_SGPSNBgZX_sC-QnEwxf8ySOiP');"></div>
+<div class="w-full md:w-1/3 h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" data-alt="Monochromatic architectural facade with repeating patterns" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAflBD7S1STNmu4TMUW7yimUGgAw9jXCIEpLiy4b7Ta-jdogvf1z2q7TkTTgIjBF_iZlCL01z2hLjihXjxUr_zlxquOoKGXbbGn2JXAWgu9dbP8c7sdmGLe_FtZWEHcZ_Vvfg6hYlJMF-EQ93S1gMwnZTbTd1mAbNLyGwJ7NycE8EhjLbZnDWgcywVw8_0xL0fpYh6DrcHIUFpoorgDogHls4FaTgqn4a1tV4DcdvN7wZfqv2sPvB1UQcrwKbt0wmfD_I1hV_moMTfW');"></div>
+<div class="w-full md:w-1/3 h-full bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern concrete exterior detail at twilight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASPTqeWZRWxE8_qNsEl7Y1pCtNzBOe45eAzA2kdoRH22e-bqCnCMeGcX48eCAZq5jVrgBseCK28uS1ExMR9SbxRxVs-6LmdZrKAMNGhJB5HuUmr7lb12kbZZQiGf8rtHUwH7NT95qqDEKl6s-PpU_Q0AEdXuyrEUT1pIc75Sd0c1gej6CTp05OdVIggGfTlhNEeSao6E3sGCzNC_ZAyMtQk56Kedzydw6-Ai6Gu9jTgHlRYHaBsJAi1YzYFEbdb719nx9lWvSas6oi');"></div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 px-6 lg:px-12 bg-background-light dark:bg-background-dark">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-bold mb-4">Start Your Project</h2>
+<p class="text-slate-500">Let’s discuss how we can bring your architectural vision to reality.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-widest font-bold">Name</label>
+<input class="bg-transparent border-0 border-b-2 border-slate-300 dark:border-slate-700 focus:ring-0 focus:border-primary px-0 py-2" placeholder="Your Name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-widest font-bold">Email</label>
+<input class="bg-transparent border-0 border-b-2 border-slate-300 dark:border-slate-700 focus:ring-0 focus:border-primary px-0 py-2" placeholder="Your Email" type="email"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-xs uppercase tracking-widest font-bold">Message</label>
+<textarea class="bg-transparent border-0 border-b-2 border-slate-300 dark:border-slate-700 focus:ring-0 focus:border-primary px-0 py-2 resize-none" placeholder="Tell us about your project" rows="4"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-center">
+<button class="bg-primary text-white px-12 py-4 rounded-none font-bold uppercase tracking-widest hover:bg-primary/90 transition-all w-full md:w-auto">
+                        Send Inquiry
+                    </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-16 px-6 lg:px-12 border-t border-slate-800">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<span class="text-xl font-black uppercase tracking-tighter">Nilaya Architect</span>
+</div>
+<p class="text-slate-400 max-w-sm mb-6">
+                    A global architectural studio dedicated to the pursuit of minimal luxury and spatial emotion.
+                </p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-primary">Location</h4>
+<p class="text-slate-400 leading-loose" data-location="Bhopal">
+                    Studio 102, Arera Colony<br/>
+                    Bhopal, MP 462016<br/>
+                    India
+                </p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest mb-6 text-primary">Connect</h4>
+<div class="flex flex-col gap-4 text-slate-400">
+<a class="hover:text-white transition-colors" href="#">Instagram</a>
+<a class="hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="#">Behance</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-widest uppercase text-slate-500">
+<p>© 2024 Nilaya Architect. All rights reserved.</p>
+<p>Designed and Developed by — <span class="text-slate-300 font-bold">Markitects</span></p>
+</div>
+</footer>
+</body></html>
